@@ -1,0 +1,30 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Model weights and datasets
+*.pt
+*.onnx
+*.weights
+*.h5
+
+# Images and media captures
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# OS metadata
+Thumbs.db
+.DS_Store
+
