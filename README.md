@@ -31,7 +31,7 @@
 - **Two alert levels**: a score of 80 or more is labelled **VIOLENCE: FIGHTING** (red); a score of 50 to 79 is labelled **SUSPICIOUS ACTIVITY** (yellow).
 - **Evidence capture**: the flagged frame is saved to `crime_scene.jpg` and a warning is printed to the console.
 
-> **Note:** the bundled `yolov8n.pt` is the standard COCO-pretrained model. Its weapon-like classes are `knife` and `scissors`. The `gun`, `pistol` and `rifle` labels in the code only fire with a custom-trained firearm model.
+> **Note:** the default `yolov8n.pt` is the standard COCO-pretrained model. Its weapon-like classes are `knife` and `scissors`. The `gun`, `pistol` and `rifle` labels in the code only fire with a custom-trained firearm model.
 
 ## 🧱 Tech Stack
 
@@ -48,8 +48,10 @@
 Crime_detector-/
 ├── proto_detect.py     # main detection loop (YOLOv8 + MediaPipe Pose)
 ├── requirements.txt    # pinned dependencies
-├── yolov8n.pt          # YOLOv8 nano weights
-└── alerts/             # sample JSON alert logs (timestamp, class, confidence, bbox)
+└── alerts/
+    └── sample_alert.json   # example alert record (timestamp, class, confidence, bbox)
+
+# yolov8n.pt is downloaded automatically by Ultralytics on first run
 ```
 
 ## ⚡ Getting Started
